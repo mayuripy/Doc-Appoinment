@@ -1,17 +1,19 @@
-
+import {BrowserRouter,Routes,Route} from 'react-router-dom'
+import HomePage from './pages/HomePage';
+import Login from './pages/Login';
+import Register from './pages/register';
 
 function App() {
   return (
     <>
-     <div class= "bg-dark">
-
-      <h2 class="text-success">hello</h2>
-
-     </div>
-    
-    
-    
-    </>
+     <BrowserRouter>
+      <Routes>
+        <Route path='/' element={<HomePage />}/>
+        <Route path='/login' element={<Login/>} />
+        <Route path='/register' element={<Register/>} />
+      </Routes>
+     </BrowserRouter>
+     </>
   );
 }
 
