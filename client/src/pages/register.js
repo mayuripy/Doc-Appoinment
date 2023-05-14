@@ -1,5 +1,5 @@
 import React from 'react'
-import { Form,Input, Typography } from "antd";
+import { Button, Form,Input, Typography } from "antd";
 
 const Register = () =>{
 
@@ -16,15 +16,14 @@ const Register = () =>{
           <Input type="email" required/>
           </form.Item>
           <form.Item lable="password" name="password">
-          <Input type="password" name="name"/>
+          <Input type="password" required/>
           </form.Item>
-          <form.Item lable="Name" name="name">
-          <Input type="text" name="name"/>
-          </form.Item>
+          <Button className='btn btn-primary' type='submite'>Register</Button>
 
      </form>
+     </div>
           
-        
+      )  
 
 
 
